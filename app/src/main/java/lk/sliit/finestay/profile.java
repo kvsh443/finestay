@@ -7,29 +7,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class registration_page extends AppCompatActivity {
+public class profile extends AppCompatActivity {
 
-    Button b1;
-
+    Button b1,b2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration_page);
+        setContentView(R.layout.activity_profile);
 
-        b1 = findViewById(R.id.register);
-
+        b1 = findViewById(R.id.update);
+        b2 = findViewById(R.id.sign_out);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        b1.setOnClickListener((new View.OnClickListener() {
+
+        b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(registration_page.this,profile.class);
+                Intent intent  = new Intent(profile.this,MainActivity.class);
                 startActivity(intent);
             }
-        }));
+        });
     }
 }
