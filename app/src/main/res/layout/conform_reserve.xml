@@ -47,8 +47,7 @@
         android:layout_marginTop="45dp"
         android:text="@string/serveice_fee_msg"
         android:textSize="18sp"
-        android:textColor="@android:color/black"
-        app:autoSizeTextType="uniform"/>
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView7"
@@ -62,8 +61,7 @@
         android:layout_marginTop="61dp"
         android:text="@string/Estimate_Price"
         android:textSize="18sp"
-        android:textColor="@android:color/black"
-        app:autoSizeTextType="uniform"/>
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView6"
@@ -83,8 +81,7 @@
         android:layout_toLeftOf="@+id/textView10"
         android:text="@string/total_msg"
         android:textSize="18sp"
-        android:textColor="@android:color/black"
-        app:autoSizeTextType="uniform"/>
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView8"
@@ -98,12 +95,10 @@
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:text="@string/sample_nights_amount"
-        android:textColor="@android:color/black"
-        app:autoSizeTextType="uniform"/>
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/textView9"
-        app:autoSizeTextType="uniform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView8"
@@ -130,8 +125,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:text="@string/lkr_total_amount_sample"
-        android:textColor="@android:color/black"
-        app:autoSizeTextType="uniform"/>
+        android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/button"
@@ -162,7 +156,6 @@
         android:layout_toEndOf="@+id/textView7"
         android:layout_toRightOf="@+id/textView7"
         android:text="@string/no_of_nights"
-        android:textColor="@android:color/black"
-        app:autoSizeTextType="uniform"/>
+        android:textColor="@android:color/black" />
 
 </RelativeLayout>
