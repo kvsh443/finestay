@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Fine Stay</string>
 
+    <string name="addr_review">Add Review</string>
+    <string name="add_back">Back</string>
+
+
 
 
     <string name="PLATINUM_PACKAGE">01.PLATINUM PACKAGE</string>
