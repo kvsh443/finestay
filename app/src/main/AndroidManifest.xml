@@ -10,17 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".Activity2" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".CalculationActivity">
 
-            <category android:name="android.intent.category.LAUNCHER" />
 
-        </intent-filter>
-        </activity>
+        <activity android:name=".profile"></activity>
+        <activity android:name=".registration_page" />
+        <activity android:name=".login_page" />
         <activity android:name=".MainActivity">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
         </activity>
+
     </application>
 
 </manifest>
