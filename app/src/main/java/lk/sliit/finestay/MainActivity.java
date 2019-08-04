@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //setContentView(R.layout.conform_reserve);
 
-        //b1 = findViewById(R.id.login_redirect);
+        b1 = findViewById(R.id.login_redirect);
 
     }
     @Override
