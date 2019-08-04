@@ -11,57 +11,66 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GUEST REVIEWS"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
-        />
+        android:text="@string/add_guestreviews"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Customer's Name"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:text="@string/add_cus_name1"
             android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:layout_marginBottom="10dp" />
+            android:textSize="20sp" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:hint="Customer's review"
-            android:layout_marginBottom="20dp"/>
+            android:text="@string/add_cus_review1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Customer's Name"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:text="@string/add_cus_name2"
             android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:layout_marginBottom="10dp" />
+            android:textSize="20sp" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:hint="Customer's review"
-            android:layout_marginBottom="20dp"/>
+            android:text="@string/add_cus_review2" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Customer's Name"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:text="@string/add_cus_name3"
             android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:layout_marginBottom="10dp" />
+            android:textSize="20sp" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:hint="Customer's review"
-            android:layout_marginBottom="20dp"/>
+            android:text="@string/add_cus_review3" />
     </LinearLayout>
 
     <LinearLayout

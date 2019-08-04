@@ -11,33 +11,34 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ADD REVIEWS"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
-        />
+        android:text="@string/add_guestreviews"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Name"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:text="@string/add_your_name"
             android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:layout_marginBottom="10dp" />
+            android:textSize="20sp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Type your feedback"
-            />
+            android:text="@string/add_your_feedback" />
     </LinearLayout>
 
     <LinearLayout
@@ -48,20 +49,21 @@
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="CANCEL"
-            android:background="@color/colorPrimary"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/add_cancel" />
+
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="SUBMIT"
-            android:background="@color/colorPrimary"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/add_submit" />
     </LinearLayout>
 
 </LinearLayout>

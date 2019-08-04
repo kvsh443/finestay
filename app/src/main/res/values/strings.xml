@@ -2,4 +2,15 @@
     <string name="app_name">Fine Stay</string>
     <string name="addr_review">Add Review</string>
     <string name="add_back">Back</string>
+    <string name="add_guestreviews">Guest Reviews</string>
+    <string name="add_your_name">Your Name</string>
+    <string name="add_your_feedback">Type your Feedback</string>
+    <string name="add_cancel">Cancel</string>
+    <string name="add_submit">Submit</string>
+    <string name="add_cus_name1">Customers\'s Name</string>
+    <string name="add_cus_name2">Customers\'s Name</string>
+    <string name="add_cus_name3">Customer\'s Name</string>
+    <string name="add_cus_review1">Customers\'s Review</string>
+    <string name="add_cus_review2">Customers\'s Review</string>
+    <string name="add_cus_review3">Customer\'s Review</string>
 </resources>
