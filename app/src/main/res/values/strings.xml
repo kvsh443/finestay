@@ -1,5 +1,33 @@
 <resources>
     <string name="app_name">Fine Stay</string>
+
+
+
+    <string name="PLATINUM_PACKAGE">01.PLATINUM PACKAGE</string>
+    <string name="GOLD_PACKAGE">02.GOLD PACKAGE</string>
+    <string name="SILVER_PACKAGE">03.SILVER PACKAGE</string>
+    <string name="NO_OF_GUESTS">NO OF GUESTS:</string>
+    <string name="NO_OF_ROOMS">NO OF ROOMS:</string>
+    <string name="NO_OF_BATHS">NO OF BATHS:</string>
+    <string name="EST_VALUE">EST.VALUE:   Rs.</string>
+    <string name="NEXT">NEXT</string>
+    <string name="pic3">pic3</string>
+    <string name="pic2">pic2</string>
+    <string name="pic1">pic1</string>
+    <string name="no1">4</string>
+    <string name="no2">3</string>
+    <string name="no3">2</string>
+    <string name="No1">15,000.00</string>
+    <string name="No2">12,000.00</string>
+    <string name="No3">10,000.00</string>
+    <string name="r1">RESERVE1</string>
+    <string name="r2">RESERVE2</string>
+    <string name="r3">RESERVE3</string>
+    <string name="a1">ADD</string>
+    <string name="a2">VIEW</string>
+    <string name="a3">UPDATE</string>
+    <string name="a4">DELETE</string>
+
     <string name="accept">Accept</string>
     <string name="CheckInMsg">Check In</string>
     <string name="CheckOutMsg">Check Out</string>
@@ -19,4 +47,5 @@
     <string name="lkr_50">600.00</string>
     <string name="lkr_total_amount_sample">2000.00</string>
     <string name="sample_nights_amount">1400 x 2</string>
+
 </resources>
