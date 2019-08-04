@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //setContentView(R.layout.conform_reserve);
 
         b1 = findViewById(R.id.login_redirect);
 
@@ -25,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Intent intent = new Intent(MainActivity.this,login_page.class);
-                //startActivity(intent);
+               Intent intent = new Intent(MainActivity.this,login_page.class);
+                startActivity(intent);
             }
         }));
     }
