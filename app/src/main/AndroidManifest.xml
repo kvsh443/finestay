@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".Admins_Reply">
 
 
@@ -22,15 +23,24 @@
         <activity android:name=".Activity2">
 
         </activity>
+
+        <activity android:name=".Date_picker_activity"></activity>
+        <activity android:name=".conform_Reservation" />
+        <activity android:name=".Reservation_Manager" />
+        <activity android:name=".PropertyActivity" />
+        <activity android:name=".Pro_UseActivity" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".CalculationActivity" />
+        <activity android:name=".profile" />
+        <activity android:name=".registration_page" />
+        <activity android:name=".login_page" />
+
         <activity android:name=".MainActivity">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
     </application>
