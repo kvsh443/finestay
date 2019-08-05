@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Fine Stay</string>
+
     <string name="user_email">Enter the Email</string>
     <string name="user_password">Enter the password</string>
     <string name="login">LOGIN</string>
@@ -19,4 +20,59 @@
     <string name="enter_the_password">Enter the password</string>
     <string name="don_t_have_an_account_yet">Don\'t have an account yet ?</string>
     <string name="registration">REGISTRATION</string>
+
+
+    <string name="addr_review">Add Review</string>
+    <string name="add_back">Back</string>
+
+
+    <string name="PLATINUM_PACKAGE">01.PLATINUM PACKAGE</string>
+    <string name="GOLD_PACKAGE">02.GOLD PACKAGE</string>
+    <string name="SILVER_PACKAGE">03.SILVER PACKAGE</string>
+    <string name="NO_OF_GUESTS">NO OF GUESTS:</string>
+    <string name="NO_OF_ROOMS">NO OF ROOMS:</string>
+    <string name="NO_OF_BATHS">NO OF BATHS:</string>
+    <string name="EST_VALUE">EST.VALUE:   Rs.</string>
+    <string name="NEXT">NEXT</string>
+    <string name="pic3">pic3</string>
+    <string name="pic2">pic2</string>
+    <string name="pic1">pic1</string>
+    <string name="no1">4</string>
+    <string name="no2">3</string>
+    <string name="no3">2</string>
+    <string name="No1">15,000.00</string>
+    <string name="No2">12,000.00</string>
+    <string name="No3">10,000.00</string>
+    <string name="r1">RESERVE1</string>
+    <string name="r2">RESERVE2</string>
+    <string name="r3">RESERVE3</string>
+    <string name="a1">ADD</string>
+    <string name="a2">VIEW</string>
+    <string name="a3">UPDATE</string>
+    <string name="a4">DELETE</string>
+
+    <string name="accept">Accept</string>
+    <string name="CheckInMsg">Check In</string>
+    <string name="CheckOutMsg">Check Out</string>
+    <string name="pick_date_in">Check In Date</string>
+    <string name="pick_date_out">Check Out Date</string>
+    <string name="no_of_guests">Number of Guests</string>
+    <string name="enter_no_of_guests">Enter Number of Guests</string>
+    <string name="Reserve_meals_bool">Reserve Meal</string>
+    <string name="Reserve">Reserve</string>
+    <string name="Estimate_Price">Estimate Price</string>
+    <string name="Conform_reserve_view">Fee and TAX Details</string>
+    <string name="Estimate_price">Estimate price</string>
+    <string name="no_of_nights">X No nights</string>
+    <string name="value_x">X</string>
+    <string name="serveice_fee_msg">Service fee</string>
+    <string name="total_msg">Total(LKR)</string>
+    <string name="lkr_50">600.00</string>
+    <string name="lkr_total_amount_sample">2000.00</string>
+    <string name="sample_nights_amount">1400 x 2</string>
+    <string name="table_column_customer_id">Customer ID</string>
+    <string name="approve_key">Approve</string>
+    <string name="deny_key">Deny</string>
+
+
 </resources>
