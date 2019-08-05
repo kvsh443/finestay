@@ -5,8 +5,6 @@
     <string name="add_back">Back</string>
 
 
-
-
     <string name="PLATINUM_PACKAGE">01.PLATINUM PACKAGE</string>
     <string name="GOLD_PACKAGE">02.GOLD PACKAGE</string>
     <string name="SILVER_PACKAGE">03.SILVER PACKAGE</string>
@@ -51,5 +49,8 @@
     <string name="lkr_50">600.00</string>
     <string name="lkr_total_amount_sample">2000.00</string>
     <string name="sample_nights_amount">1400 x 2</string>
+    <string name="table_column_customer_id">Customer ID</string>
+    <string name="approve_key">Approve</string>
+    <string name="deny_key">Deny</string>
 
 </resources>
