@@ -9,18 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Admins_Reply">
 
-        <activity android:name=".Activity2" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
 
-        </intent-filter>
+        </activity>
+        <activity android:name=".Admin_Feedback">
+
+
+        </activity>
+
+        <activity android:name=".Activity2">
+
         </activity>
         <activity android:name=".MainActivity">
 
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>
