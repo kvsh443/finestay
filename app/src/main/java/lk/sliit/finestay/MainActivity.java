@@ -19,12 +19,40 @@ public class MainActivity extends AppCompatActivity {
     Button b7;
     Button b8;
     Button b9;
+    Button b10;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    //
+    //     setContentView(R.layout.activity_feedback);
+    //
+    //     b1 = findViewById(R.id.add_review);
+    //     b5 = findViewById(R.id.admin);
+    // }
+    //
+    // @Override
+    // protected void onResume() {
+    //     super.onResume();
+    //
+    //     b1.setOnClickListener(new View.OnClickListener() {
+    //         @Override
+    //         public void onClick(View view) {
+    //             Intent i1 = new Intent(MainActivity.this,Activity2.class);
+    //             startActivity(i1);
+    //         }
+    //     });
+    //
+    //     b5.setOnClickListener(new View.OnClickListener() {
+    //         @Override
+    //         public void onClick(View view) {
+    //             Intent i1 = new Intent(MainActivity.this,Admin_Feedback.class);
+    //             startActivity(i1);
+    //         }
+    //     });
+
 //        setContentView(R.layout.activity_reservation__manager);
 //    }
         setContentView(R.layout.activity_main);
@@ -50,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
 //        b7.setOnClickListener(this);
 //        b8.setOnClickListener(this);
 //        b9.setOnClickListener(this);
+
 
     }
     @Override

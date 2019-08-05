@@ -35,17 +35,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="@string/add_your_name"
+            android:text="@string/admin_cus_name"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer's Feedback"
+            android:inputType=""
+            android:text="@string/admin_cus_feedback" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Type your feedback"
+            android:hint="Type Your Response"
             android:inputType="textPersonName"
-            android:text="@string/add_your_feedback" />
+            android:text="@string/type_response" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -55,14 +63,14 @@
 
 
         <Button
-            android:id="@+id/cus_cancel"
+            android:id="@+id/ad_cancel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="@string/add_cancel" />
+            android:text="@string/admin_cancel" />
 
         <Button
             android:layout_width="0dp"
@@ -71,7 +79,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="@string/add_submit" />
+            android:text="@string/admin_submit" />
     </LinearLayout>
 
 </LinearLayout>
