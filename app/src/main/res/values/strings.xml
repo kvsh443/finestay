@@ -1,6 +1,27 @@
 <resources>
     <string name="app_name">Fine Stay</string>
 
+    <string name="user_email">Enter the Email</string>
+    <string name="user_password">Enter the password</string>
+    <string name="login">LOGIN</string>
+    <string name="registration_redirect">REGISTER NOW</string>
+    <string name="register">REGISTER</string>
+    <string name="fName">Enter the first name</string>
+    <string name="lName">Enter the last name</string>
+    <string name="email">Enter the email</string>
+    <string name="mobile">Enter the contact number</string>
+    <string name="lang">Enter the prefered language</string>
+    <string name="country">Enter the country</string>
+    <string name="delete_account">DELETE ACCOUNT</string>
+    <string name="update_account">UPDATE ACCOUNT</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="login_page">LOGIN PAGE</string>
+    <string name="enter_your_e_mail">Enter your E-mail</string>
+    <string name="enter_the_password">Enter the password</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet ?</string>
+    <string name="registration">REGISTRATION</string>
+
+
     <string name="addr_review">Add Review</string>
     <string name="add_back">Back</string>
 
@@ -52,5 +73,6 @@
     <string name="table_column_customer_id">Customer ID</string>
     <string name="approve_key">Approve</string>
     <string name="deny_key">Deny</string>
+
 
 </resources>
