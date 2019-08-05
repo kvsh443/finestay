@@ -112,18 +112,18 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-//        b8.setOnClickListener((new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this,);
-//                startActivity(intent);
-//            }
-//        }));
+        b8.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Admin_Feedback.class);
+                startActivity(intent);
+            }
+        }));
 
         b9.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Activity2.class);
+                Intent intent = new Intent(MainActivity.this,FeedbackActivity.class);
                 startActivity(intent);
             }
         }));

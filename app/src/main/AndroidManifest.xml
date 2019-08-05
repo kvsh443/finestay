@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Date_picker_activity"></activity>
+        <activity android:name=".FeedbackActivity"></activity>
+        <activity android:name=".Admins_Reply" />
+        <activity android:name=".Admin_Feedback" />
+        <activity android:name=".Date_picker_activity" />
         <activity android:name=".conform_Reservation" />
         <activity android:name=".Reservation_Manager" />
         <activity android:name=".PropertyActivity" />

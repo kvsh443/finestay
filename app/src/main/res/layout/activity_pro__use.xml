@@ -504,14 +504,15 @@
         >
 
         <Button
+            android:id="@+id/next"
+            style="?android:attr/button"
             android:layout_width="0dp"
+
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
             android:text="@string/NEXT"
             android:textColor="@android:color/black"
-            style="?android:attr/button"
-            android:textSize="50sp"/>
+            android:textSize="50sp" />
 
 
     </LinearLayout>
