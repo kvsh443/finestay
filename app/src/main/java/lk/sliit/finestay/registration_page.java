@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class registration_page extends AppCompatActivity {
 
     Button b1;
+    ImageButton b2;
 
 
     @Override
@@ -19,6 +21,7 @@ public class registration_page extends AppCompatActivity {
 
         b1 = findViewById(R.id.register);
 
+        b2 = findViewById(R.id.logo);
     }
 
     @Override

@@ -1,29 +1,29 @@
 <resources>
     <string name="app_name">Fine Stay</string>
 
+    <string name="user_email">Enter the Email</string>
+    <string name="user_password">Enter the password</string>
+    <string name="login">LOGIN</string>
+    <string name="registration_redirect">REGISTER NOW</string>
+    <string name="register">REGISTER</string>
+    <string name="fName">Enter the first name</string>
+    <string name="lName">Enter the last name</string>
+    <string name="email">Enter the email</string>
+    <string name="mobile">Enter the contact number</string>
+    <string name="lang">Enter the prefered language</string>
+    <string name="country">Enter the country</string>
+    <string name="delete_account">DELETE ACCOUNT</string>
+    <string name="update_account">UPDATE ACCOUNT</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="login_page">LOGIN PAGE</string>
+    <string name="enter_your_e_mail">Enter your E-mail</string>
+    <string name="enter_the_password">Enter the password</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet ?</string>
+    <string name="registration">REGISTRATION</string>
+
+
     <string name="addr_review">Add Review</string>
     <string name="add_back">Back</string>
-    <string name="add_guestreviews">Guest Reviews</string>
-    <string name="add_your_name">Your Name</string>
-    <string name="add_your_feedback">Type your Feedback</string>
-    <string name="add_cancel">Cancel</string>
-    <string name="add_submit">Submit</string>
-    <string name="add_cus_name1">Customer\'s Name</string>
-    <string name="add_cus_name2">Customer\'s Name</string>
-    <string name="add_cus_name3">Customer\'s Name</string>
-    <string name="add_cus_review1">Customer\'s Review</string>
-    <string name="add_cus_review2">Customer\'s Review</string>
-    <string name="add_cus_review3">Customer\'s Review</string>
-    <string name="admin_cus_name">Customer\'s Name</string>
-    <string name="admin_cus_feedback">Customer\'s Feedback</string>
-    <string name="admin_cancel">Cancel</string>
-    <string name="admin_submit">Submit</string>
-    <string name="admin_response1">Response</string>
-    <string name="admin_response2">Response</string>
-    <string name="admin_response3">Response</string>
-    <string name="admin_back">Back</string>
-    <string name="type_response">Type Your Response</string>
-
 
 
     <string name="PLATINUM_PACKAGE">01.PLATINUM PACKAGE</string>
