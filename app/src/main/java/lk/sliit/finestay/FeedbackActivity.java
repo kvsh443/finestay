@@ -11,6 +11,7 @@ public class FeedbackActivity extends AppCompatActivity {
 
     Button b1;
     Button b5;
+    Button b9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class FeedbackActivity extends AppCompatActivity {
 
              b1 = findViewById(R.id.add_review);
              b5 = findViewById(R.id.admin);
+             b9 = findViewById(R.id.backk);
          }
 
          @Override
@@ -37,6 +39,14 @@ public class FeedbackActivity extends AppCompatActivity {
                  @Override
                  public void onClick(View view) {
                      Intent i1 = new Intent(FeedbackActivity.this,Admin_Feedback.class);
+                     startActivity(i1);
+                 }
+             });
+
+             b9.setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View view) {
+                     Intent i1 = new Intent(FeedbackActivity.this,MainActivity.class);
                      startActivity(i1);
                  }
              });

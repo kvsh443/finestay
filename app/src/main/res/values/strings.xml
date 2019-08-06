@@ -93,6 +93,11 @@
     <string name="table_column_customer_id">Customer ID</string>
     <string name="approve_key">Approve</string>
     <string name="deny_key">Deny</string>
+    <string name="Reservation_Manage">Manage Reservation</string>
+    <string name="type_your_feedback">Type your feedback</string>
+    <string name="todo">TODO</string>
+    <string name="customer_s_review">Customer\'s review</string>
+
 
 
 </resources>
