@@ -31,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         b1 = findViewById(R.id.login_redirect);
-        b2 = findViewById(R.id.reservationlist_redirect);
-        b5 = findViewById(R.id.conform_redirect);
-        b6 = findViewById(R.id.property_ad_redirect);
-        b7 = findViewById(R.id.property_redirect);
-        b8 = findViewById(R.id.feedback_ad_redirect);
-        b9 = findViewById(R.id.feedback_redirect);
-        b4 = findViewById(R.id.date_picker_redirect);
-        b3 = findViewById(R.id.calculation_redirect);
+//        b2 = findViewById(R.id.reservationlist_redirect);
+//        b5 = findViewById(R.id.conform_redirect);
+//        b6 = findViewById(R.id.property_ad_redirect);
+        b7 = findViewById(R.id.property);
+//        b8 = findViewById(R.id.feedback_ad_redirect);
+        b9 = findViewById(R.id.feedback);
+//        b4 = findViewById(R.id.date_picker_redirect);
+        b3 = findViewById(R.id.calculation);
 
 
 //        b1.setOnClickListener(this);
@@ -63,13 +63,13 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-        b2.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Reservation_Manager.class);
-                startActivity(intent);
-            }
-        }));
+//        b2.setOnClickListener((new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this,Reservation_Manager.class);
+//                startActivity(intent);
+//            }
+//        }));
 
         b3.setOnClickListener((new View.OnClickListener() {
             @Override
@@ -79,30 +79,29 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-        b4.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Date_picker_activity.class);
-                startActivity(intent);
-            }
-        }));
+//        b4.setOnClickListener((new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this,Date_picker_activity.class);
+//                startActivity(intent);
+//            }
+//        }));
 
-        b5.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,conform_Reservation.class);
-                startActivity(intent);
-            }
-        }));
+//        b5.setOnClickListener((new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this,conform_Reservation.class);
+//                startActivity(intent);
+//            }
+//        }));
 
-
-        b6.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,PropertyActivity.class);
-                startActivity(intent);
-            }
-        }));
+//        b6.setOnClickListener((new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this,PropertyActivity.class);
+//                startActivity(intent);
+//            }
+//        }));
 
         b7.setOnClickListener((new View.OnClickListener() {
             @Override
@@ -112,13 +111,13 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-        b8.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Admin_Feedback.class);
-                startActivity(intent);
-            }
-        }));
+//        b8.setOnClickListener((new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this,Admin_Feedback.class);
+//                startActivity(intent);
+//            }
+//        }));
 
         b9.setOnClickListener((new View.OnClickListener() {
             @Override

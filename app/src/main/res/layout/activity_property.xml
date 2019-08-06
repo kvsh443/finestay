@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView
-
+    xmlns:tools="http://schemas.android.com/tools" android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -12,7 +12,6 @@
 <LinearLayout
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".PropertyActivity"
@@ -55,15 +54,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/NO_OF_GUESTS"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
 
-            />
+            android:layout_marginStart="10dp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_GUESTS"
             android:autofillHints="@string/NO_OF_GUESTS"/>
@@ -79,18 +80,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/NO_OF_ROOMS"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
 
-            />
+            android:layout_marginStart="10dp" />
         <EditText
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_ROOMS"
             android:autofillHints="@string/NO_OF_ROOMS"
-            />
+            android:layout_marginEnd="10dp" />
 
 
 
@@ -107,6 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/NO_OF_BATHS"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
 
@@ -115,6 +119,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_BATHS"
             android:autofillHints="@string/NO_OF_BATHS"
@@ -133,6 +138,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
             android:text="@string/EST_VALUE"
             android:textColor="@android:color/black"/>
 
@@ -141,9 +147,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginRight="10dp"
             android:inputType="number"
             android:hint="@string/EST_VALUE"
-            android:autofillHints="@string/EST_VALUE"/>
+            android:autofillHints="@string/EST_VALUE"
+            android:layout_marginEnd="10dp" />
 
 
 
@@ -167,6 +175,7 @@
             android:layout_height="100dp"
             android:layout_weight="5"
             android:text="@string/GOLD_PACKAGE"
+            android:layout_marginLeft="10dp"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -191,6 +200,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/NO_OF_GUESTS"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
 
@@ -200,6 +210,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_GUESTS"
             android:autofillHints="@string/NO_OF_GUESTS"/>
@@ -215,14 +226,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/NO_OF_ROOMS"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
 
-            />
+            android:layout_marginStart="10dp" />
         <EditText
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_ROOMS"
             android:autofillHints="@string/NO_OF_ROOMS"/>
@@ -242,6 +255,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/NO_OF_BATHS"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
 
@@ -250,10 +264,11 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_BATHS"
             android:autofillHints="@string/NO_OF_BATHS"
-            />
+            android:layout_marginEnd="10dp" />
 
 
 
@@ -269,6 +284,7 @@
             android:layout_weight="1"
             android:background="@color/colorPrimary"
             android:text="@string/EST_VALUE"
+            android:layout_marginLeft="10dp"
             android:textColor="@android:color/black"
 
             />
@@ -277,6 +293,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginRight="10dp"
             android:inputType="number"
             android:hint="@string/EST_VALUE"
             android:autofillHints="@string/EST_VALUE"/>
@@ -297,6 +314,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="5"
+            android:layout_marginLeft="10dp"
             android:text="@string/SILVER_PACKAGE"
             android:textAlignment="center"
             android:textSize="30sp"
@@ -322,6 +340,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/NO_OF_GUESTS"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
 
@@ -331,9 +350,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_GUESTS"
-            android:autofillHints="@string/NO_OF_GUESTS"/>
+            android:autofillHints="@string/NO_OF_GUESTS"
+            android:layout_marginEnd="10dp" />
 
     </LinearLayout>
     <LinearLayout
@@ -346,18 +367,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/NO_OF_ROOMS"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
 
-            />
+            android:layout_marginStart="10dp" />
         <EditText
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_ROOMS"
             android:autofillHints="@string/NO_OF_ROOMS"
-            />
+            android:layout_marginEnd="10dp" />
 
 
 
@@ -373,6 +396,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:text="@string/NO_OF_BATHS"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/black"
@@ -382,10 +406,11 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             android:inputType="numberDecimal"
             android:hint="@string/NO_OF_BATHS"
             android:autofillHints="@string/NO_OF_BATHS"
-            />
+            android:layout_marginEnd="10dp" />
 
 
 
@@ -399,6 +424,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:background="@color/colorPrimary"
             android:text="@string/EST_VALUE"
             android:textColor="@android:color/black"
@@ -409,9 +435,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginRight="10dp"
             android:autofillHints="@string/EST_VALUE"
             android:hint="@string/EST_VALUE"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:layout_marginEnd="10dp" tools:targetApi="o" />
 
 
 
@@ -503,7 +531,7 @@
             android:paddingRight="100dp"
             android:text="@string/a3"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:inputType="none"
             android:layout_marginTop="20dp"
             />

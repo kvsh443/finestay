@@ -2,13 +2,14 @@
 
 <ScrollView
 
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@drawable/background">
 
 <LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".Activity2"
@@ -53,7 +54,7 @@
             android:hint="@string/type_your_feedback"
             android:inputType="textPersonName"
             android:text="@string/add_your_feedback"
-            android:autofillHints="" tools:targetApi="o"/>
+            android:autofillHints="" />
     </LinearLayout>
 
     <LinearLayout

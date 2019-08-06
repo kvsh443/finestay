@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -22,6 +30,7 @@
         android:id="@+id/imageView4"
         android:layout_width="55dp"
         android:layout_height="57dp"
+        android:layout_marginLeft="10dp"
         app:srcCompat="@drawable/user" />
 
     <LinearLayout
@@ -83,3 +92,5 @@
     </LinearLayout>
 
 </LinearLayout>
+
+</ScrollView>

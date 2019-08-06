@@ -36,7 +36,7 @@ public class Admin_Feedback extends AppCompatActivity {
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i1 = new Intent(Admin_Feedback.this,MainActivity.class);
+                Intent i1 = new Intent(Admin_Feedback.this,FeedbackActivity.class);
                 startActivity(i1);
             }
         });
