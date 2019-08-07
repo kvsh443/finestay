@@ -21,7 +21,7 @@
         <activity android:name=".CalculationActivity" android:screenOrientation="portrait"/>
         <activity android:name=".profile" android:screenOrientation="portrait"/>
         <activity android:name=".registration_page" android:screenOrientation="portrait" />
-        <activity android:name=".login_page" android:screenOrientation="portrait"/> >
+        <activity android:name=".login_page" android:screenOrientation="portrait"/>
 
 
         <activity android:name=".MainActivity">
