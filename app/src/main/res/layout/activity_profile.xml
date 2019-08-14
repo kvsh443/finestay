@@ -218,7 +218,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:background="#F3F33232"
-        android:text="@string/delete_account"
+        android:text="@string/lName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

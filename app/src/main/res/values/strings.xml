@@ -1,22 +1,50 @@
 <resources>
     <string name="app_name">Fine Stay</string>
-    <string name="user_email">Enter the Email</string>
+
+
+    <string name="login">FINE STAY LOGIN </string>
+
+    <string name="enter_email">Enter the user Email</string>
+    <string name="user_email">Enter your Email here</string>
+    <string name="enter_password">Enter user Email here</string>
     <string name="user_password">Enter the password</string>
-    <string name="login">LOGIN</string>
+    <string name="login_button">LOGIN</string>
+    <string name="dont_have_an_account_yet">Don\'t have an account yet ?</string>
     <string name="registration_redirect">REGISTER NOW</string>
-    <string name="register">REGISTER</string>
+
+
+    <string name="registration">REGISTRATION PAGE</string>
+
+    <string name="tfname">First Name</string>
     <string name="fName">Enter the first name</string>
+
+    <string name="tlname">Last Name</string>
     <string name="lName">Enter the last name</string>
+
+    <string name="temail">E-Mail</string>
     <string name="email">Enter the email</string>
+
+    <string name="tgender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="tmobile">Mobile Number</string>
     <string name="mobile">Enter the contact number</string>
-    <string name="lang">Enter the prefered language</string>
+
+    <string name="tlanguage">Prefered Language</string>
+    <string name="language">Enter the prefered language</string>
+
+    <string name="tcountry">Country</string>
     <string name="country">Enter the country</string>
-    <string name="delete_account">DELETE ACCOUNT</string>
+
+    <string name="register">REGISTER</string>
+
+
     <string name="update_account">UPDATE ACCOUNT</string>
     <string name="sign_out">SIGN OUT</string>
-    <string name="login_page">LOGIN PAGE</string>
     <string name="enter_your_e_mail">Enter your E-mail</string>
     <string name="enter_the_password">Enter the password</string>
-    <string name="don_t_have_an_account_yet">Don\'t have an account yet ?</string>
-    <string name="registration">REGISTRATION</string>
+
+
+
 </resources>
