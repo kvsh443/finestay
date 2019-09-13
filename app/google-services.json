@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620463472846",
+    "firebase_url": "https://finestay-property.firebaseio.com",
+    "project_id": "finestay-property",
+    "storage_bucket": "finestay-property.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620463472846:android:ff891d7cabef605513909f",
+        "android_client_info": {
+          "package_name": "lk.sliit.finestay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620463472846-on8tmlnfi71h2pukn5lp4c69buk2mdce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lk.sliit.finestay",
+            "certificate_hash": "50a9a1000dd2fd5d24168586afc413ffd81c4500"
+          }
+        },
+        {
+          "client_id": "620463472846-mn44180sssdnsf5mm1onio8msqr275ta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvTHfGyiiuG-AJrD4fqcpNL30IJDqCJhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620463472846-mn44180sssdnsf5mm1onio8msqr275ta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
