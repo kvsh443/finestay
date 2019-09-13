@@ -49,6 +49,8 @@
     <string name="PLATINUM_PACKAGE">01.PLATINUM PACKAGE</string>
     <string name="GOLD_PACKAGE">02.GOLD PACKAGE</string>
     <string name="SILVER_PACKAGE">03.SILVER PACKAGE</string>
+    <string name="Management">PACKAGE MANAGEMENT</string>
+    <string name="PACKAGE_NAME">PACKAGE_NAME:</string>
     <string name="NO_OF_GUESTS">NO OF GUESTS:</string>
     <string name="NO_OF_ROOMS">NO OF ROOMS:</string>
     <string name="NO_OF_BATHS">NO OF BATHS:</string>
