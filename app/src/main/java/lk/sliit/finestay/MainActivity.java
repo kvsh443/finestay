@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     Button b6;
     Button b7;
     Button b8;
-    Button b9;
+    Button b9,b_meals,b_admin_meals;
+
 
 
 
@@ -27,29 +28,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_reservation__manager);
 //    }
+        Toast.makeText(MainActivity.this,"Firebase success ",Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_main);
 
 
         b1 = findViewById(R.id.login_redirect);
-//        b2 = findViewById(R.id.reservationlist_redirect);
-//        b5 = findViewById(R.id.conform_redirect);
-//        b6 = findViewById(R.id.property_ad_redirect);
         b7 = findViewById(R.id.property);
-//        b8 = findViewById(R.id.feedback_ad_redirect);
         b9 = findViewById(R.id.feedback);
-//        b4 = findViewById(R.id.date_picker_redirect);
         b3 = findViewById(R.id.calculation);
-
-
-//        b1.setOnClickListener(this);
-//        b2.setOnClickListener(this);
-//        b3.setOnClickListener(this);
-//        b4.setOnClickListener(this);
-//        b5.setOnClickListener(this);
-//        b6.setOnClickListener(this);
-//        b7.setOnClickListener(this);
-//        b8.setOnClickListener(this);
-//        b9.setOnClickListener(this);
+        b_meals = findViewById(R.id.meal);
+        b_admin_meals = findViewById(R.id.admin_meal);
 
     }
     @Override
@@ -63,14 +51,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-//        b2.setOnClickListener((new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this,Reservation_Manager.class);
-//                startActivity(intent);
-//            }
-//        }));
-
         b3.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,30 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         }));
-
-//        b4.setOnClickListener((new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this,Date_picker_activity.class);
-//                startActivity(intent);
-//            }
-//        }));
-
-//        b5.setOnClickListener((new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this,conform_Reservation.class);
-//                startActivity(intent);
-//            }
-//        }));
-
-//        b6.setOnClickListener((new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this,PropertyActivity.class);
-//                startActivity(intent);
-//            }
-//        }));
 
         b7.setOnClickListener((new View.OnClickListener() {
             @Override
@@ -111,14 +67,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-//        b8.setOnClickListener((new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this,Admin_Feedback.class);
-//                startActivity(intent);
-//            }
-//        }));
-
         b9.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -127,8 +75,20 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-
-
+        b_meals.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,meals.class);
+                startActivity(intent);
+            }
+        }));
+        b_admin_meals.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,admin_meals_add.class);
+                startActivity(intent);
+            }
+        }));
     }
 
 //    @Override

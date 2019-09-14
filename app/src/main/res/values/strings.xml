@@ -1,25 +1,69 @@
 <resources>
     <string name="app_name">Fine Stay</string>
 
+    //LOGIN PAGE
+    <string name="loginpage">LOGIN PAGE</string>
+    <string name="enter_email">Enter your Email</string>
     <string name="user_email">Enter the Email</string>
+    <string name="enter_pwd">Enter the password</string>
     <string name="user_password">Enter the password</string>
     <string name="login">LOGIN</string>
+    <string name="havenotaccount">Don\'t have an account yet ?</string>
     <string name="registration_redirect">REGISTER NOW</string>
-    <string name="register">REGISTER</string>
+
+    //REGISTRATION PAGE
+    <string name="registration">REGISTRATION</string>
+    <string name="enter_fName">First Name</string>
     <string name="fName">Enter the first name</string>
+    <string name="enter_lName">Last Name</string>
     <string name="lName">Enter the last name</string>
+    <string name="e_email">Email</string>
     <string name="email">Enter the email</string>
+    <string name="e_mobile">Mobile Number</string>
     <string name="mobile">Enter the contact number</string>
+    <string name="pwd">Password</string>
     <string name="lang">Enter the prefered language</string>
+    <string name="password">Password</string>
     <string name="country">Enter the country</string>
+    <string name="c">Country</string>
+    <string name="register">REGISTER</string>
+
+    //user profile
+    <string name="profile_page">USER PROFILE</string>
+    <string name="fn">fn</string>
+    <string name="ln">ln</string>
+    <string name="mn">mn</string>
+    <string name="cnt">cnt</string>
+    <string name="em">em</string>
+    <string name="u_email">User E-mail</string>
     <string name="delete_account">DELETE ACCOUNT</string>
     <string name="update_account">UPDATE ACCOUNT</string>
     <string name="sign_out">SIGN OUT</string>
-    <string name="login_page">LOGIN PAGE</string>
-    <string name="enter_your_e_mail">Enter your E-mail</string>
-    <string name="enter_the_password">Enter the password</string>
-    <string name="don_t_have_an_account_yet">Don\'t have an account yet ?</string>
-    <string name="registration">REGISTRATION</string>
+
+    //meals reservation
+    <string name="breakfast">BREAKFAST MENU</string>
+    <string name="lunch">LUNCH MENU</string>
+    <string name="meal">MEAL RESERVATIONS</string>
+    <string name="skipmeals">Skip Meal Reservations</string>
+
+    //meals_add
+    <string name="meal_add">ADDING MEALS</string>
+    <string name="meal4breakfast">Meals for Breakfast</string>
+    <string name="meal4lunch">Meals for Lunch</string>
+    <string name="add_breakfast">ADD MEALS FOR BREAKFAST</string>
+    <string name="add_lunch">ADD MEALS FOR LUNCH</string>
+    <string name="br_meal_name">Meal Name</string>
+    <string name="br_meal_description">Meal description with includings</string>
+    <string name="ln_meal_name">Meal Name</string>
+    <string name="ln_meal_description">Meal description with includings</string>
+    <string name="edit">EDIT THE ADDED MEALS</string>
+
+
+
+    //meals_edit_delete
+    <string name="meal_edit">EDIT MEALS</string>
+
+
 
 
     <string name="addr_review">Add Review</string>
@@ -97,7 +141,7 @@
     <string name="type_your_feedback">Type your feedback</string>
     <string name="todo">TODO</string>
     <string name="customer_s_review">Customer\'s review</string>
-
+    <string name="delete_meal">DELETE MEAL</string>
 
 
 </resources>
