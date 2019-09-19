@@ -2,21 +2,19 @@ package lk.sliit.finestay;
 
 public class Property {
 
-    private String name;
+    public  String name;
     private Integer guests;
     private Integer rooms;
     private Integer baths;
-    private Integer value;
+
+
 
     public Property() {
-    }
-
-    public Property(String name, Integer guests, Integer rooms, Integer baths, Integer value) {
         this.name = name;
         this.guests = guests;
         this.rooms = rooms;
         this.baths = baths;
-        this.value = value;
+
     }
 
     public String getName() {
@@ -51,11 +49,5 @@ public class Property {
         this.baths = baths;
     }
 
-    public Integer getValue() {
-        return value;
-    }
 
-    public void setValue(Integer value) {
-        this.value = value;
-    }
 }

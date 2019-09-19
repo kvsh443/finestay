@@ -1,5 +1,6 @@
 package lk.sliit.finestay;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -22,13 +23,13 @@ public class PropertyActivity extends AppCompatActivity {
 
     RadioGroup radioGroup;
     RadioButton radioButton;
-    EditText guests,rooms,baths,value;
+    EditText guests,rooms,baths;
     DatabaseReference dbRef;
-    Property pro;
+
     Button ADD,VIEW,UPDATE,DELETE;
 
 
-
+    Property pro;
 
 
     @Override
@@ -39,7 +40,7 @@ public class PropertyActivity extends AppCompatActivity {
         guests = findViewById(R.id.editGuest);
         rooms = findViewById(R.id.editRoom);
         baths = findViewById(R.id.editBath);
-        value = findViewById(R.id.editValue);
+
 
         ADD = findViewById(R.id.btnAdd);
         VIEW = findViewById(R.id.btnView);
@@ -54,6 +55,8 @@ public class PropertyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
                dbRef = FirebaseDatabase.getInstance().getReference().child("Property");
 
                 int radioId = radioGroup.getCheckedRadioButtonId();
@@ -67,15 +70,30 @@ public class PropertyActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Please enter number of guests ",Toast.LENGTH_SHORT).show();
                     else if (TextUtils.isEmpty(rooms.getText().toString()))
                         Toast.makeText(getApplicationContext(),"Please enter number of rooms ",Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(baths.getText().toString()))
-                        Toast.makeText(getApplicationContext(),"Please enter number of baths ",Toast.LENGTH_SHORT).show();
+
+                    else  if(radioButton.equals(findViewById(R.id.btnPlat))) {
+
+                        Intent intent = new Intent(PropertyActivity.this,Pro_UseActivity.class);
+                        startActivity(intent);
+
+                    }
+                    else if (radioButton.equals(findViewById(R.id.btnGld))){
+
+                        Intent intent = new Intent(PropertyActivity.this,Gold_Package.class);
+                        startActivity(intent);
+                    }
+                    else if (radioButton.equals(findViewById(R.id.btnSil))){
+
+                        Intent i = new Intent(PropertyActivity.this,Silver_Package.class);
+                        startActivity(i);
+                    }
                     else{
 
                         pro.setName(radioButton.getText().toString().trim());
                         pro.setGuests(Integer.parseInt(guests.getText().toString().trim()));
                         pro.setRooms(Integer.parseInt(rooms.getText().toString().trim()));
                         pro.setBaths(Integer.parseInt(baths.getText().toString().trim()));
-                        pro.setValue(Integer.parseInt(value.getText().toString().trim()));
+
 
                         dbRef.push().setValue(pro);
                         dbRef.child("Pro1").setValue(pro);
@@ -87,9 +105,11 @@ public class PropertyActivity extends AppCompatActivity {
 
                 }catch (NumberFormatException e){
 
-                    Toast.makeText(getApplicationContext(),"Invalid amount of Value",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Invalid amount of baths",Toast.LENGTH_SHORT).show();
 
                 }
+
+
 
             }
         });
@@ -108,7 +128,7 @@ public class PropertyActivity extends AppCompatActivity {
                             guests.setText(dataSnapshot.child("guests").getValue().toString());
                             rooms.setText(dataSnapshot.child("rooms").getValue().toString());
                             baths.setText(dataSnapshot.child("baths").getValue().toString());
-                            value.setText(dataSnapshot.child("value").getValue().toString());
+
                         }
                         else
                             Toast.makeText(getApplicationContext(),"No details to display",Toast.LENGTH_SHORT).show();
@@ -138,7 +158,7 @@ public class PropertyActivity extends AppCompatActivity {
                                 pro.setGuests(Integer.parseInt(guests.getText().toString().trim()));
                                 pro.setRooms(Integer.parseInt(rooms.getText().toString().trim()));
                                 pro.setBaths(Integer.parseInt(baths.getText().toString().trim()));
-                                pro.setValue(Integer.parseInt(value.getText().toString().trim()));
+
 
                                 dbRef = FirebaseDatabase.getInstance().getReference().child("Property").child("Pro1");
                                 dbRef.setValue(pro);
@@ -211,7 +231,7 @@ public class PropertyActivity extends AppCompatActivity {
         guests.setText("");
         rooms.setText("");
         baths.setText("");
-        value.setText("");
+
 
     }
 }

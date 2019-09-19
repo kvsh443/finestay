@@ -15,7 +15,7 @@ public class Pro_UseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pro__use);
 
-        b1 = findViewById(R.id.next);
+
 
 
     }
@@ -24,13 +24,7 @@ public class Pro_UseActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Pro_UseActivity.this,PropertyActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 }
