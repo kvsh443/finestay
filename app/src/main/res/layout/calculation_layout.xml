@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,27 +10,27 @@
 
 
     <Button
+        android:id="@+id/btncheckOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:hint="@string/pick_date_out"
+        android:onClick="showDatePickerDialog"
+        app:layout_constraintBottom_toTopOf="@+id/editTextGuestNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btncheckIn"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
         android:id="@+id/btncheckIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_dark"
+        android:hint="@string/pick_date_in"
         android:onClick="showDatePickerDialog"
-        android:text="@string/pick_date_in"
         app:layout_constraintBottom_toTopOf="@+id/editTextGuestNo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btncheckout"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/btncheckout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
-        android:onClick="showDatePickerDialog"
-        android:text="@string/pick_date_out"
-        app:layout_constraintBottom_toTopOf="@+id/editTextGuestNo"
-        app:layout_constraintEnd_toStartOf="@+id/btncheckIn"
+        app:layout_constraintEnd_toStartOf="@+id/btncheckOut"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -58,7 +59,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnReserve"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPackageSelect" />
 
     <EditText
         android:id="@+id/editTextGuestNo"
@@ -68,12 +69,34 @@
         android:layout_marginBottom="248dp"
         android:ems="10"
         android:hint="@string/enter_no_of_guests"
+        android:importantForAutofill="no"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/btnReserve"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        android:importantForAutofill="no" />
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <Spinner
+        android:id="@+id/spinnerPackages"
+        android:layout_width="214dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewPackageSelect"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuestNo"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <TextView
+        android:id="@+id/textViewPackageSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectPackage"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerPackages"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView2"
@@ -83,7 +106,7 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toTopOf="@+id/btncheckIn"
+        app:layout_constraintBottom_toTopOf="@+id/btncheckOut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView"
@@ -98,7 +121,7 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toTopOf="@+id/btncheckout"
+        app:layout_constraintBottom_toTopOf="@+id/btncheckIn"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

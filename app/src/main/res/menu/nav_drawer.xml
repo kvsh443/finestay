@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="my_profile" />
+        <item
+            android:id="@+id/nav_bookings"
+            android:icon="@drawable/ic_cloud_black_24dp"
+            android:title="my_bookings" />
+        <item
+            android:id="@+id/nav_reg"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="register_a_as_band" />
+        <item
+            android:id="@+id/my_bands"
+            android:icon="@android:drawable/ic_popup_sync"
+            android:title="view_my_bands" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="logout" />
+    </group>
+</menu>

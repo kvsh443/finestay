@@ -9,21 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FeedbackActivity"></activity>
+        <activity android:name=".Date_picker_2_Activity"></activity>
+        <activity android:name=".FeedbackActivity" />
         <activity android:name=".Admins_Reply" />
         <activity android:name=".Admin_Feedback" />
         <activity android:name=".Date_picker_activity" />
-        <activity android:name=".conform_Reservation" android:screenOrientation="portrait" />
+        <activity
+            android:name=".conform_Reservation"
+            android:screenOrientation="portrait" />
         <activity android:name=".Reservation_Manager" />
         <activity android:name=".PropertyActivity" />
         <activity android:name=".Pro_UseActivity" />
         <activity android:name=".Activity2" />
-        <activity android:name=".CalculationActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".profile" android:screenOrientation="portrait"/>
-        <activity android:name=".registration_page" android:screenOrientation="portrait" />
-        <activity android:name=".login_page" android:screenOrientation="portrait"/>
-
-
+        <activity
+            android:name=".CalculationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registration_page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login_page"
+            android:screenOrientation="portrait" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
