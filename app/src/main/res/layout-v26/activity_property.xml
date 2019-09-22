@@ -136,6 +136,37 @@
             android:autofillHints="@string/NO_OF_GUESTS"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtChild"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/NO_OF_Children"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/black"
+
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/editChild"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/NO_OF_Children"
+            android:autofillHints="@string/NO_OF_Children"/>
+
+    </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -168,36 +199,7 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
 
-        <TextView
-            android:id="@+id/txtBath"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_BATHS"
-            android:layout_marginStart="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
-
-            />
-        <EditText
-            android:id="@+id/editBath"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_BATHS"
-            android:autofillHints="@string/NO_OF_BATHS"
-            />
-
-
-
-    </LinearLayout>
 
 
 
@@ -208,53 +210,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
+        android:textAlignment="center">
 
         <Button
             style="?android:attr/button"
             android:id="@+id/btnAdd"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="25"
             android:clickable="true"
             android:filterTouchesWhenObscured="true"
             android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="@string/a1"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:inputType="none"
             android:layout_marginTop="20dp"
+
             />
-
-
-
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
 
         <Button
             style="?android:attr/button"
             android:id="@+id/btnView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="25"
             android:clickable="true"
             android:filterTouchesWhenObscured="true"
             android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="@string/a2"
             android:textColor="@android:color/black"
             android:textSize="20sp"
@@ -263,37 +250,42 @@
 
             />
 
-
-
-
-
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
-
         <Button
             style="?android:attr/button"
             android:id="@+id/btnUpdate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="25"
             android:clickable="true"
             android:filterTouchesWhenObscured="true"
             android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="@string/a3"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:inputType="none"
             android:layout_marginTop="20dp"
+
+            />
+
+        <Button
+            style="?android:attr/button"
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:clickable="true"
+            android:filterTouchesWhenObscured="true"
+            android:focusable="true"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/a4"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:inputType="none"
+            android:layout_marginTop="20dp"
+
             />
 
 
@@ -304,29 +296,51 @@
 
 
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
+       >
 
         <Button
             style="?android:attr/button"
-            android:id="@+id/btnDelete"
+            android:id="@+id/btnAccount"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
             android:filterTouchesWhenObscured="true"
+            android:background="@color/colorPrimary"
             android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
-            android:text="@string/a4"
+            android:text="@string/account"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:inputType="none"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <Button
+            style="?android:attr/button"
+            android:id="@+id/btnMeals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:filterTouchesWhenObscured="true"
+            android:background="@color/colorPrimary"
+            android:focusable="true"
+            android:text="@string/meals"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:inputType="none"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             />
 
 

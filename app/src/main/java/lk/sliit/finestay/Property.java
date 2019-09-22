@@ -5,7 +5,8 @@ public class Property {
     public  String name;
     private Integer guests;
     private Integer rooms;
-    private Integer baths;
+    private Integer children;
+
 
 
 
@@ -13,7 +14,8 @@ public class Property {
         this.name = name;
         this.guests = guests;
         this.rooms = rooms;
-        this.baths = baths;
+        this.children = children;
+
 
     }
 
@@ -41,13 +43,12 @@ public class Property {
         this.rooms = rooms;
     }
 
-    public Integer getBaths() {
-        return baths;
+
+    public Integer getChildren() {
+        return children;
     }
 
-    public void setBaths(Integer baths) {
-        this.baths = baths;
+    public void setChildren(Integer children) {
+        this.children = children;
     }
-
-
 }

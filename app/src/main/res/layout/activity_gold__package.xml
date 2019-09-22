@@ -330,6 +330,58 @@
         </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                style="?android:attr/button"
+                android:id="@+id/btnAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:filterTouchesWhenObscured="true"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:text="@string/account"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="none"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <Button
+                style="?android:attr/button"
+                android:id="@+id/btnMeals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:filterTouchesWhenObscured="true"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:text="@string/meals"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="none"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
 
 
 
