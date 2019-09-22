@@ -76,40 +76,44 @@ public class CalculationActivity extends AppCompatActivity implements AdapterVie
         btnReserve.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                try{
-                    in = simpleDateFormat.parse(btncheckIn.getText().toString());
-                    out = simpleDateFormat.parse(btncheckOut.getText().toString());
-                    c1.setTime(in);
-                    c2.setTime(out);
-                    long dayDiff = out.getTime() - in.getTime();
-                    String noOfnights = String.valueOf((TimeUnit.DAYS.convert(dayDiff,TimeUnit.MILLISECONDS)));
-                    if (0>TimeUnit.DAYS.convert(dayDiff,TimeUnit.MILLISECONDS)){
-                        Toast.makeText(getApplicationContext(),"Invalid Date selection!",Toast.LENGTH_LONG).show();
-                        if (Build.VERSION.SDK_INT >= 11) {
-                            activity.recreate();
-                        } else {
-                            activity.finish();
-                            activity.startActivity(activity.getIntent());
+                if (!(editTextGuestNo.toString().isEmpty())){
+                    try{
+                        in = simpleDateFormat.parse(btncheckIn.getText().toString());
+                        out = simpleDateFormat.parse(btncheckOut.getText().toString());
+                        c1.setTime(in);
+                        c2.setTime(out);
+                        long dayDiff = out.getTime() - in.getTime();
+                        String noOfnights = String.valueOf((TimeUnit.DAYS.convert(dayDiff,TimeUnit.MILLISECONDS)));
+                        if (0>TimeUnit.DAYS.convert(dayDiff,TimeUnit.MILLISECONDS)){
+                            Toast.makeText(getApplicationContext(),"Invalid Date selection!",Toast.LENGTH_LONG).show();
+                            if (Build.VERSION.SDK_INT >= 11) {
+                                activity.recreate();
+                            } else {
+                                activity.finish();
+                                activity.startActivity(activity.getIntent());
+                            }
+                        }else{
+                            if (checkBox.isChecked()){
+                                System.out.println("Check box Checked!");
+                                intentSendPayload.putExtra("Meals",true);
+                            }else
+                            {
+                                intentSendPayload.putExtra("Meals",false);
+                            }
+                            intentSendPayload.putExtra("NoOfGuests",editTextGuestNo.getText().toString());
                         }
-                    }else{
-                        if (checkBox.isChecked()){
-                            System.out.println("Check box Checked!");
-                            intentSendPayload.putExtra("Meals",true);
-                        }else
-                        {
-                            intentSendPayload.putExtra("Meals",false);
-                        }
-                        intentSendPayload.putExtra("NoOfGuests",editTextGuestNo.getText().toString());
+                        intentSendPayload.putExtra("Initial_Value",packageValue.toString());
+                        intentSendPayload.putExtra("NoOfNights",noOfnights);
+                        System.out.println("No of days from "+c1.get(Calendar.DATE)+" to "+c2.get(Calendar.DATE)+": "+TimeUnit.DAYS.convert(dayDiff,TimeUnit.MILLISECONDS));
+                    }catch (ParseException e) {
+                        e.printStackTrace();
                     }
-                    intentSendPayload.putExtra("Initial_Value",packageValue.toString());
-                    intentSendPayload.putExtra("NoOfNights",noOfnights);
-                    System.out.println("No of days from "+c1.get(Calendar.DATE)+" to "+c2.get(Calendar.DATE)+": "+TimeUnit.DAYS.convert(dayDiff,TimeUnit.MILLISECONDS));
-                }catch (ParseException e) {
-                    e.printStackTrace();
-                }
 
-                startActivity(intentSendPayload);
+                    startActivity(intentSendPayload);
+                }else {
+                    Toast.makeText(CalculationActivity.this, "Please Enter Number of Guests", Toast.LENGTH_SHORT).show();
+
+                }
             }
         }));
 

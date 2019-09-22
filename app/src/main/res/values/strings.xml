@@ -98,6 +98,13 @@
     <string name="todo">TODO</string>
     <string name="customer_s_review">Customer\'s review</string>
     <string name="selectPackage">Select Package</string>
+    <string name="textViewCustomerID">Customer ID</string>
+    <string name="textViewCheckInDate">Check In Date</string>
+    <string name="textViewCheckOut">Check Out Date</string>
+    <string name="textViewMeals">Meals</string>
+    <string name="textViewTotal">Total</string>
+    <string name="textViewStatus">Status</string>
+    <string name="textViewNoOfGuests">No of Guests</string>
     <string-array name="package_array">
         <item>Platinum</item>
         <item>Gold</item>

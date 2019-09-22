@@ -25,6 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 import lk.sliit.finestay.Model.Reservation;
 
@@ -43,6 +44,8 @@ public class conform_Reservation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.conform_reserve);
+
+
 
         buttonReserveConform = findViewById(R.id.buttonReserveConform);
         textViewNoNights = findViewById(R.id.textViewNoNights);
@@ -100,15 +103,20 @@ public class conform_Reservation extends AppCompatActivity {
                 alertDialog.setButton(Dialog.BUTTON_POSITIVE,"Conform", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        Random random = new Random();
+                        int cu = random.nextInt(1000);
+                        String cuId = String.valueOf(cu);
                         reservation.setCheckIn(intentGetPayloadData.getStringExtra("inDate"));
                         reservation.setCheckOut(intentGetPayloadData.getStringExtra("outDate"));
                         reservation.setMeals(meals);
                         reservation.setTotal(textViewTotal.getText().toString());
-                        reservation.setCustomerID("3");
+                        reservation.setCustomerID(cuId);
+                        reservation.setGuestNo(intentGetPayloadData.getStringExtra("NoOfGuests"));
                         final Map<String, Object> myObjectAsDict = new HashMap<>();
                         myObjectAsDict.put("customerID",reservation.getCustomerID());
                         myObjectAsDict.put("checkIn", reservation.getCheckIn());
                         myObjectAsDict.put("checkOut",reservation.getCheckOut());
+                        myObjectAsDict.put("guestNo", reservation.getGuestNo());
                         myObjectAsDict.put("meals", reservation.getMeals());
                         myObjectAsDict.put("total", reservation.getTotal());
                         myObjectAsDict.put("status", "pending");

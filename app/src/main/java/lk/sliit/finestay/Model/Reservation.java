@@ -4,9 +4,11 @@ public class Reservation {
     String customerID;
     String checkIn;
     String checkOut;
+    String guestNo;
     String meals;
     String total;
     String status;
+
 
     public Reservation() {
 
@@ -58,5 +60,13 @@ public class Reservation {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getGuestNo() {
+        return guestNo;
+    }
+
+    public void setGuestNo(String guestNo) {
+        this.guestNo = guestNo;
     }
 }
