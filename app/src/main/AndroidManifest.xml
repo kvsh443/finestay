@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="lk.sliit.finestay">
-
+    package="lk.sliit.finestay"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-sdk tools:overrideLibrary="com.firebase.ui.database, com.firebase.ui.common"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,21 +10,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FeedbackActivity"></activity>
+        <activity android:name=".Date_picker_2_Activity"></activity>
+        <activity android:name=".FeedbackActivity" />
         <activity android:name=".Admins_Reply" />
         <activity android:name=".Admin_Feedback" />
         <activity android:name=".Date_picker_activity" />
-        <activity android:name=".conform_Reservation" android:screenOrientation="portrait" />
+        <activity
+            android:name=".conform_Reservation"
+            android:screenOrientation="portrait" />
         <activity android:name=".Reservation_Manager" />
         <activity android:name=".PropertyActivity" />
         <activity android:name=".Pro_UseActivity" />
         <activity android:name=".Activity2" />
-        <activity android:name=".CalculationActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".profile" android:screenOrientation="portrait"/>
-        <activity android:name=".registration_page" android:screenOrientation="portrait" />
-        <activity android:name=".login_page" android:screenOrientation="portrait"/>
-
-
+        <activity
+            android:name=".CalculationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registration_page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login_page"
+            android:screenOrientation="portrait" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

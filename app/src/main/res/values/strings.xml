@@ -80,7 +80,7 @@
     <string name="pick_date_out">Check Out Date</string>
     <string name="no_of_guests">Number of Guests</string>
     <string name="enter_no_of_guests">Enter Number of Guests</string>
-    <string name="Reserve_meals_bool">Reserve Meal</string>
+    <string name="Reserve_meals_bool">First Day Reserve Meals</string>
     <string name="Reserve">Reserve</string>
     <string name="Estimate_Price">Estimate Price</string>
     <string name="Conform_reserve_view">Fee and TAX Details</string>
@@ -99,7 +99,20 @@
     <string name="type_your_feedback">Type your feedback</string>
     <string name="todo">TODO</string>
     <string name="customer_s_review">Customer\'s review</string>
-
+    <string name="selectPackage">Select Package</string>
+    <string name="textViewCustomerID">Customer ID</string>
+    <string name="textViewCheckInDate">Check In Date</string>
+    <string name="textViewCheckOut">Check Out Date</string>
+    <string name="textViewMeals">Meals</string>
+    <string name="textViewTotal">Total</string>
+    <string name="textViewStatus">Status</string>
+    <string name="textViewNoOfGuests">No of Guests</string>
+    <string-array name="package_array">
+        <item>Platinum</item>
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Bronze</item>
+    </string-array>
 
 
 </resources>

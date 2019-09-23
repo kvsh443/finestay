@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_ee008c">
+
+    <TextView
+        android:id="@+id/textViewGuestNo2"
+        android:layout_width="204dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/textViewNoOfGuests"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGuests"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus3" />
+
+    <TextView
+        android:id="@+id/textViewGuests"
+        android:layout_width="204dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/textViewNoOfGuests"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewGuestNo2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus" />
+
+    <TextView
+        android:id="@+id/textViewCustomerID2"
+        android:layout_width="204dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="@string/textViewCustomerID"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCheckInDate2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCustomerID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCustomerID"
+        android:layout_width="204dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="@string/textViewCustomerID"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCheckInDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewCustomerID2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCheckInDate2"
+        android:layout_width="204dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/textViewCheckInDate"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCheckOutDate3"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCheckInDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCustomerID2" />
+
+    <TextView
+        android:id="@+id/textViewCheckInDate"
+        android:layout_width="204dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/textViewCheckInDate"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCheckOutDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewCheckInDate2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCustomerID" />
+
+    <TextView
+        android:id="@+id/textViewCheckOutDate3"
+        android:layout_width="204dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="@string/textViewCheckOut"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMeal"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCheckOutDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCheckInDate2" />
+
+    <TextView
+        android:id="@+id/textViewCheckOutDate"
+        android:layout_width="204dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="@string/textViewCheckOut"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMeal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewCheckOutDate3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCheckInDate" />
+
+    <TextView
+        android:id="@+id/textViewMeal"
+        android:layout_width="204dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/textViewMeals"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotal3"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMeal2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCheckOutDate3" />
+
+    <TextView
+        android:id="@+id/textViewMeal2"
+        android:layout_width="204dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/textViewMeals"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewMeal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCheckOutDate" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="204dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="@string/textViewTotal"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotal3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMeal2" />
+
+    <TextView
+        android:id="@+id/textViewTotal3"
+        android:layout_width="204dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="@string/textViewTotal"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStatus3"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMeal" />
+
+    <TextView
+        android:id="@+id/textViewStatus3"
+        android:layout_width="204dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/textViewStatus"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGuestNo2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGuests"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotal3" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="204dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:text="@string/textViewStatus"
+        android:textColor="#FAF7F7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGuests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewGuestNo2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

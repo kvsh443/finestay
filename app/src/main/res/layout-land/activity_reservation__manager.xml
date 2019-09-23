@@ -1,258 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/blue_gradient"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/color_ae2bea">
 
-    <TableLayout
-        android:id="@+id/simple_table"
-        android:layout_width="0dp"
-        android:layout_height="420dp"
+    <!--    <TableLayout-->
+    <!--        android:id="@+id/simple_table"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:stretchColumns="0,1,2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="1.0">-->
 
-        android:stretchColumns="0,1,2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <!--        <TableRow-->
+    <!--            android:id="@+id/tableRow1"-->
+    <!--            android:layout_width="fill_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/border">-->
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border">
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView1a"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="@string/table_column_customer_id"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView1a"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:text="@string/table_column_customer_id"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView2a"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="@string/CheckInMsg"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView2a"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:text="@string/CheckInMsg"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView3a"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="@string/CheckOutMsg"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView3a"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:text="@string/CheckOutMsg"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView4a"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="@string/total_msg"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView4a"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:text="@string/total_msg"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
-        </TableRow>
+    <!--        </TableRow>-->
 
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border">
+    <!--        <TableRow-->
+    <!--            android:id="@+id/tableRow2"-->
+    <!--            android:layout_width="fill_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/border">-->
 
-            <TextView
-                android:id="@+id/textView1b"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView1b"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView2b"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView2b"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView3b"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView3b"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView4b"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
-        </TableRow>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView4b"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border">
+    <!--        </TableRow>-->
 
-            <TextView
-                android:id="@+id/textView1c"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--        <TableRow-->
+    <!--            android:id="@+id/tableRow3"-->
+    <!--            android:layout_width="fill_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/border">-->
 
-            <TextView
-                android:id="@+id/textView2c"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView1c"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView3c"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView2c"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView4c"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
-        </TableRow>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView3c"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border">
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView4c"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView1d"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--        </TableRow>-->
 
-            <TextView
-                android:id="@+id/textView2d"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--        <TableRow-->
+    <!--            android:id="@+id/tableRow4"-->
+    <!--            android:layout_width="fill_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/border">-->
 
-            <TextView
-                android:id="@+id/textView3d"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView1d"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-            <TextView
-                android:id="@+id/textView4d"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="#00F"></TextView>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView2d"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView3d"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-        </TableRow>
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView4d"-->
+    <!--                android:layout_width="fill_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="1dp"-->
+    <!--                android:background="@drawable/border"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--                android:textColor="#00F"></TextView>-->
 
-    </TableLayout>
+    <!--        </TableRow>-->
+    <!--    </TableLayout>-->
+
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/approve_key"
         android:background="@android:color/holo_blue_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button7"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button7"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/deny_key"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
-        app:layout_constraintHorizontal_bias="0.71"
-        app:layout_constraintStart_toStartOf="@+id/simple_table" />
+        android:text="@string/approve_key"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/listView1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/a4"
         android:background="@android:color/holo_orange_dark"
+        android:text="@string/deny_key"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/listView1"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="550dp"
+        android:layout_height="315dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
