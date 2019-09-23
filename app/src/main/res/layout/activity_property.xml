@@ -9,601 +9,345 @@
 
 
 
-<LinearLayout
-
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".PropertyActivity"
-    android:orientation="vertical">
-
-
     <LinearLayout
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
+        tools:context=".PropertyActivity"
         android:orientation="vertical">
 
-        <TextView
-
-            android:id="@+id/textView10"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginTop="0dp"
-            android:layout_weight="5"
-            android:text="@string/PLATINUM_PACKAGE"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="30sp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="5"
+                android:text="@string/Management"
+                android:textAlignment="center"
+                android:textColor="@android:color/primary_text_dark_nodisable"
+                android:textSize="30sp" />
 
 
-        <ImageView
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="295dp"
-            android:layout_weight="10"
-            android:src="@drawable/pic1"
-            android:contentDescription="@string/pic1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_GUESTS"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
-
-            android:layout_marginStart="10dp" />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_GUESTS"
-            android:autofillHints="@string/NO_OF_GUESTS"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_ROOMS"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
-
-            android:layout_marginStart="10dp" />
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_ROOMS"
-            android:autofillHints="@string/NO_OF_ROOMS"
-            android:layout_marginEnd="10dp" />
-
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_BATHS"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
-
-            />
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_BATHS"
-            android:autofillHints="@string/NO_OF_BATHS"
-            />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:layout_marginLeft="10dp"
-            android:text="@string/EST_VALUE"
-            android:textColor="@android:color/black"/>
-
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"
-            android:inputType="number"
-            android:hint="@string/EST_VALUE"
-            android:autofillHints="@string/EST_VALUE"
-            android:layout_marginEnd="10dp" />
+            android:layout_height="200dp"
+            android:orientation="vertical">
 
 
 
 
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="10"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pic1"
+                android:contentDescription="@string/pic1"/>
+        </LinearLayout>
 
 
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical">
-
-        <TextView
-
-            android:id="@+id/textView11"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_weight="5"
-            android:text="@string/GOLD_PACKAGE"
-            android:layout_marginLeft="10dp"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            >
 
-            />
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/PACKAGE_NAME"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/black"
 
-        <ImageView
+                android:layout_marginStart="10dp" />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <RadioButton
+                    android:id="@+id/btnPlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PLATINUM_PACKAGE"
+                    android:onClick="checkButton"/>
+                <RadioButton
+                    android:id="@+id/btnGld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GOLD_PACKAGE"
+                    android:onClick="checkButton"/>
+                <RadioButton
+                    android:id="@+id/btnSil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SILVER_PACKAGE"
+                    android:onClick="checkButton"/>
+
+
+
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="295dp"
-            android:layout_weight="10"
-            android:src="@drawable/pic2"
-            android:contentDescription="@string/pic2"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_GUESTS"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
+            >
 
-            />
+            <TextView
+                android:id="@+id/txtGuest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/NO_OF_GUESTS"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/black"
 
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_GUESTS"
-            android:autofillHints="@string/NO_OF_GUESTS"/>
+                android:layout_marginStart="10dp" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+            <EditText
+                android:id="@+id/editGuest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/NO_OF_GUESTS"
+                android:autofillHints="@string/NO_OF_GUESTS"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_ROOMS"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
+        </LinearLayout>
 
-            android:layout_marginStart="10dp" />
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_ROOMS"
-            android:autofillHints="@string/NO_OF_ROOMS"/>
-
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_BATHS"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
-
-            />
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_BATHS"
-            android:autofillHints="@string/NO_OF_BATHS"
-            android:layout_marginEnd="10dp" />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="@string/EST_VALUE"
-            android:layout_marginLeft="10dp"
-            android:textColor="@android:color/black"
-
-            />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"
-            android:inputType="number"
-            android:hint="@string/EST_VALUE"
-            android:autofillHints="@string/EST_VALUE"/>
-
-
-
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical">
-        <TextView
-
-            android:id="@+id/textView12"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_weight="5"
-            android:layout_marginLeft="10dp"
-            android:text="@string/SILVER_PACKAGE"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textColor="@android:color/black"
-
-            />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="290dp"
-            android:layout_weight="10"
-            android:src="@drawable/pic3"
-            android:contentDescription="@string/pic3"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_GUESTS"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
+            >
 
-            />
+            <TextView
+                android:id="@+id/txtChild"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/NO_OF_Children"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/black"
 
-        <EditText
-            android:layout_width="0dp"
+                android:layout_marginStart="10dp" />
+
+            <EditText
+                android:id="@+id/editChild"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/NO_OF_Children"
+                android:autofillHints="@string/NO_OF_Children"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_GUESTS"
-            android:autofillHints="@string/NO_OF_GUESTS"
-            android:layout_marginEnd="10dp" />
+            >
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+            <TextView
+                android:id="@+id/txtRoom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/NO_OF_ROOMS"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/black"
 
-        <TextView
-            android:layout_width="0dp"
+                android:layout_marginStart="10dp" />
+            <EditText
+                android:id="@+id/editRoom"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/NO_OF_ROOMS"
+                android:autofillHints="@string/NO_OF_ROOMS"
+                android:layout_marginEnd="10dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/NO_OF_ROOMS"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
+            android:textAlignment="center">
 
-            android:layout_marginStart="10dp" />
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            <Button
+                style="?android:attr/button"
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:clickable="true"
+                android:filterTouchesWhenObscured="true"
+                android:focusable="true"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/a1"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="none"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <Button
+                style="?android:attr/button"
+                android:id="@+id/btnView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:clickable="true"
+                android:filterTouchesWhenObscured="true"
+                android:focusable="true"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/a2"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="none"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <Button
+                style="?android:attr/button"
+                android:id="@+id/btnUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:clickable="true"
+                android:filterTouchesWhenObscured="true"
+                android:focusable="true"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/a3"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="none"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <Button
+                style="?android:attr/button"
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:clickable="true"
+                android:filterTouchesWhenObscured="true"
+                android:focusable="true"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/a4"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="none"
+                android:layout_marginTop="20dp"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_ROOMS"
-            android:autofillHints="@string/NO_OF_ROOMS"
-            android:layout_marginEnd="10dp" />
+            >
+
+            <Button
+                style="?android:attr/button"
+                android:id="@+id/btnAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:filterTouchesWhenObscured="true"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:text="@string/account"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="none"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
 
 
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp"
-            android:text="@string/NO_OF_BATHS"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/black"
-
-            />
-        <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:inputType="numberDecimal"
-            android:hint="@string/NO_OF_BATHS"
-            android:autofillHints="@string/NO_OF_BATHS"
-            android:layout_marginEnd="10dp" />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp"
-            android:background="@color/colorPrimary"
-            android:text="@string/EST_VALUE"
-            android:textColor="@android:color/black"
-
-            />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp"
-            android:autofillHints="@string/EST_VALUE"
-            android:hint="@string/EST_VALUE"
-            android:inputType="number"
-            android:layout_marginEnd="10dp" tools:targetApi="o" />
-
-
-
-
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
-
-        <Button
-            style="?android:attr/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:filterTouchesWhenObscured="true"
-            android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
-            android:text="@string/a1"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:inputType="none"
-            android:layout_marginTop="20dp"
-            />
+            <Button
+                style="?android:attr/button"
+                android:id="@+id/btnMeals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:filterTouchesWhenObscured="true"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:text="@string/meals"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:inputType="none"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
 
 
 
 
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
-
-        <Button
-            style="?android:attr/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:filterTouchesWhenObscured="true"
-            android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
-            android:text="@string/a2"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:inputType="none"
-            android:layout_marginTop="20dp"
-
-            />
-
-
-
-
-
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
-
-        <Button
-            style="?android:attr/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:filterTouchesWhenObscured="true"
-            android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
-            android:text="@string/a3"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:inputType="none"
-            android:layout_marginTop="20dp"
-            />
-
-
-
-
-
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
-
-        <Button
-            style="?android:attr/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:filterTouchesWhenObscured="true"
-            android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
-            android:text="@string/a4"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:inputType="none"
-            android:layout_marginTop="20dp"
-            />
-
-
-
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp">
-
-        <Button
-            style="?android:attr/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:filterTouchesWhenObscured="true"
-            android:focusable="true"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
-            android:text="@string/a5"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:inputType="none"
-            android:layout_marginTop="20dp"
-            />
-
-
-
-
-
-    </LinearLayout>
+        </LinearLayout>
 
 
 
