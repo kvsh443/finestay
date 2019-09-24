@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "620463472846",
-    "firebase_url": "https://finestay-property.firebaseio.com",
-    "project_id": "finestay-property",
-    "storage_bucket": "finestay-property.appspot.com"
+    "project_number": "464898451724",
+    "firebase_url": "https://finestay-92909.firebaseio.com",
+    "project_id": "finestay-92909",
+    "storage_bucket": "finestay-92909.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:620463472846:android:ff891d7cabef605513909f",
+        "mobilesdk_app_id": "1:464898451724:android:56424e09c4ded77e5e4129",
         "android_client_info": {
           "package_name": "lk.sliit.finestay"
         }
       },
       "oauth_client": [
         {
-          "client_id": "620463472846-on8tmlnfi71h2pukn5lp4c69buk2mdce.apps.googleusercontent.com",
+          "client_id": "464898451724-780oodsjd7hc7ikemdbjv1h31ioi8v84.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "lk.sliit.finestay",
-            "certificate_hash": "50a9a1000dd2fd5d24168586afc413ffd81c4500"
+            "certificate_hash": "09b898b1c9e550e33a6cbd5f2b63f54e0590664e"
           }
         },
         {
-          "client_id": "620463472846-mn44180sssdnsf5mm1onio8msqr275ta.apps.googleusercontent.com",
+          "client_id": "464898451724-s1qbtfqeroh030iuv485rhg7q9ssag6g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCvTHfGyiiuG-AJrD4fqcpNL30IJDqCJhM"
+          "current_key": "AIzaSyCsWwvhG7jVPANP9oaVV0VKHqzT4h2eNMI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "620463472846-mn44180sssdnsf5mm1onio8msqr275ta.apps.googleusercontent.com",
+              "client_id": "464898451724-s1qbtfqeroh030iuv485rhg7q9ssag6g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
