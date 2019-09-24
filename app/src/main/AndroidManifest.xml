@@ -10,33 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Date_picker_2_Activity"></activity>
-        <activity android:name=".FeedbackActivity" />
-        <activity android:name=".Silver_Package"></activity>
-        <activity android:name=".Gold_Package" />
-
-        <activity android:name=".Admins_Reply" />
-        <activity android:name=".Admin_Feedback" />
-        <activity android:name=".Date_picker_activity" />
-        <activity
-            android:name=".conform_Reservation"
-            android:screenOrientation="portrait" />
-        <activity android:name=".Reservation_Manager" />
-        <activity android:name=".PropertyActivity" />
-        <activity android:name=".Pro_UseActivity" />
-        <activity android:name=".Activity2" />
-        <activity
-            android:name=".CalculationActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".profile"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".registration_page"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".login_page"
-            android:screenOrientation="portrait" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,6 +17,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".login_page" ></activity>
+        <activity
+            android:name=".admin_login_page"
+            android:label="@string/title_activity_admin_login" />
+        <activity android:name=".Date_picker_2_Activity"></activity>
+        <activity android:name=".Silver_Package"></activity>
+        <activity android:name=".Gold_Package" />
+        <activity android:name=".use_by_customer" />
+        <activity android:name=".use_by_admin" />
+        <activity android:name=".added_b_meals" />
+        <activity android:name=".listtest" />
+        <activity android:name=".admin_mealadd" />
+        <activity android:name=".admin_meals_edit_delete" />
+        <activity android:name=".lunch_meals" />
+        <activity android:name=".breakfast_meals" />
+        <activity android:name=".meals_page" />
+        <activity android:name=".profile" />
+        <activity android:name=".Date_picker_activity" />
+        <activity
+            android:name=".conform_Reservation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Reservation_Manager" />
+        <activity android:name=".PropertyActivity" />
+        <activity android:name=".Pro_UseActivity" />
+        <activity
+            android:name=".CalculationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".feedback_update_delete"></activity>
+        <activity android:name=".Admins_Reply"></activity>
+        <activity android:name=".Admin_Feedback"></activity>
+        <activity android:name=".Activity2"></activity>
+        <activity android:name=".FeedBackView">
+        </activity>
+
     </application>
 
 </manifest>

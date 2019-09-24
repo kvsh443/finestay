@@ -1,17 +1,10 @@
 <resources>
     <string name="app_name">Fine Stay</string>
 
-    <string name="user_email">Enter the Email</string>
-    <string name="user_password">Enter the password</string>
-    <string name="login">LOGIN</string>
-    <string name="registration_redirect">REGISTER NOW</string>
-    <string name="register">REGISTER</string>
-    <string name="fName">Enter the first name</string>
-    <string name="lName">Enter the last name</string>
-    <string name="email">Enter the email</string>
+
     <string name="mobile">Enter the contact number</string>
     <string name="lang">Enter the prefered language</string>
-    <string name="country">Enter the country</string>
+
     <string name="delete_account">DELETE ACCOUNT</string>
     <string name="update_account">UPDATE ACCOUNT</string>
     <string name="sign_out">SIGN OUT</string>
@@ -19,7 +12,7 @@
     <string name="enter_your_e_mail">Enter your E-mail</string>
     <string name="enter_the_password">Enter the password</string>
     <string name="don_t_have_an_account_yet">Don\'t have an account yet ?</string>
-    <string name="registration">REGISTRATION</string>
+
 
 
     <string name="addr_review">Add Review</string>
@@ -71,12 +64,12 @@
     <string name="r1">RESERVE1</string>
     <string name="r2">RESERVE2</string>
     <string name="r3">RESERVE3</string>
-    <string name="a1">ADD</string>
+
     <string name="a2">VIEW</string>
     <string name="a3">UPDATE</string>
     <string name="a4">DELETE</string>
     <string name="a5">BACK</string>
-    <string name="meals">MEAL LIST</string>
+
     <string name="account">RESERVATIONS</string>
     <string name="NO_OF_Children">NO OF CHILDREN:</string>
 
@@ -122,4 +115,135 @@
         <item>Bronze</item>
     </string-array>
 
+
+<!--  - - - - - - -  - - - - - -  - - -->
+
+    <string name="register">Register</string>
+    <string name="enter_fName">enter_fName</string>
+    <string name="fName">fName</string>
+    <string name="registration">registration</string>
+    <string name="ln">Last Name</string>
+    <string name="fn">First Name</string>
+    <string name="em">Email</string>
+    <string name="co">Country</string>
+    <string name="mn">Mobile Number</string>
+    <string name="pw">Password</string>
+    <string name="fname">Enter the First Name</string>
+    <string name="lname">Enter the last name</string>
+    <string name="email">User E-mail</string>
+    <string name="country">Enter the country</string>
+    <string name="mnumber">Enter Mobile Number</string>
+    <string name="password">Enter a Password</string>
+    <string name="reg">REGISTRATION</string>
+    <string name="login">login</string>
+    <string name="profile">profile</string>
+    <string name="meals">Meal menu</string>
+    <string name="addmeal">Add Meals</string>
+    <string name="delete">DELETE ACCOUNT</string>
+    <string name="update">UPDATE ACCOUNT</string>
+    <string name="signout">SIGN OUT</string>
+    <string name="loginpage">LOGIN PAGE</string>
+    <string name="user_email">Enter the Email</string>
+    <string name="enter_email">Enter your Email</string>
+    <string name="enter_pwd">Enter the password</string>
+    <string name="user_password">Enter the password</string>
+    <string name="havenotaccount">Don\'t have an account yet?</string>
+    <string name="REGISTRATION_REDIRECT">REGISTER NOW</string>
+    <string name="meal">AVAILABLE MEALS</string>
+    <string name="breakfast">BREAKFAST MENU</string>
+    <string name="lunch">LUNCH MENU</string>
+    <string name="skipmeals">Skip Meals</string>
+    <string name="meal_add">ADDING MEALS</string>
+    <string name="meal4breakfast">MEALS FOR BREAKFAST</string>
+    <string name="meal4lunch">MEALS FOR LUNCH</string>
+    <string name="br_meal_name">Meal Name</string>
+    <string name="br_meal_description">Meal description with includings</string>
+    <string name="add_breakfast">ADD MEALS FOR BREAKFAST</string>
+    <string name="ln_meal_name">Meal Name</string>
+    <string name="ln_meal_description">Meal description with includings</string>
+    <string name="add_lunch">ADD MEALS FOR LUNCH</string>
+    <string name="edit">EDIT ADDED MEALS</string>
+    <string name="meal_edit">EDIT MEALS</string>
+    <string name="update_bmeal">UPDATE BREAKFAST MEAL</string>
+    <string name="update_lmeal">UPDATE LUNCH MEAL</string>
+    <string name="delete_bmeal">DELETE MEAL</string>
+    <string name="delete_lmeal">DELETE</string>
+
+    <string name="appetizers">APPETIZERS</string>
+    <string name="rice">RICE</string>
+    <string name="noodles">NOODLES</string>
+    <string name="drinks">BEVERAGES</string>
+
+    <string name="eacha">LKR + tax</string>
+    <string name="eachb">Buy3 , Free1</string>
+    <string name="eachc">LKR + tax</string>
+    <string name="eachd">Buy3 , Free1</string>
+
+    <string name="aprice">Price / description</string>
+    <string name="bprice">Price / description</string>
+    <string name="cprice">Price / description</string>
+    <string name="dprice">Price / description</string>
+    <string name="a1">Appetizer name</string>
+
+    <string name="b1">Rice Name</string>
+
+    <string name="c1">Noodle Meal</string>
+    <string name="d1">Beverage Meal</string>
+
+    <string name="editdeletemeal">Edit/Delete added meals</string>
+    <string name="list">list</string>
+    <string name="showlist">showlist</string>
+    <string name="addappetizer">Add Appetizer</string>
+    <string name="addrice">Add Rice Meal</string>
+    <string name="addnoodles">Add Noodle Meal</string>
+    <string name="adddrink">Add Beverages</string>
+    <string name="app">list appertizer</string>
+    <string name="showbr">Show</string>
+    <string name="showa">Show</string>
+    <string name="showb">Show</string>
+    <string name="showc">Show</string>
+    <string name="showd">Show</string>
+    <string name="upa">Update</string>
+    <string name="upb">Update</string>
+    <string name="upc">Update</string>
+    <string name="upd">Update</string>
+    <string name="deletea">Delete</string>
+    <string name="deleteb">Delete</string>
+    <string name="deletec">Delete</string>
+    <string name="deleted">Delete</string>
+    <string name="viewaddings">View Added Meals</string>
+    <string name="updatethis">EDIT / DELETE MEALS</string>
+    <string name="confirmpwd">Re-Enter password</string>
+    <string name="cpwd">Enter Password again</string>
+    <string name="addmeals">ADD MEALS</string>
+    <string name="udatemeals">UPDATE MEALS</string>
+    <string name="addedmeals">ADDED MEALS</string>
+    <string name="admin">ADMIN</string>
+    <string name="customer">CUSTOMER</string>
+    <string name="title_activity_admin_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="adminlogin">ADMIN LOGIN</string>
+    <string name="propertyXXX">Property</string>
+    <string name="Addxxx">Add</string>
+
+
+<!--    - - - - - - - - - -  -  -->
+
+    <string name="uname">User Name</string>
+    <string name="guestreviews">Guest Reviews</string>
+
+
+    <string name="feedback">Feedback</string>
+    <string name="usname">Customer\'s Name</string>
+    <string name="usfeedback">Customer\'s Feedback</string>
+    <string name="feedbackbtn">Feedback</string>
+    <string name="feedbackasd">Admin Feedback</string>
+    <string name="adminProp">Reservation Manager</string>
 </resources>

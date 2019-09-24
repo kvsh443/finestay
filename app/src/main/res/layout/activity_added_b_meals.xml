@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".added_b_meals">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".lunch_meals">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".lunch_meals">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="120dp"
+                                android:layout_height="93dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="104dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/friedrice" />
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="120dp"
+                                android:layout_height="93dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="304dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/noodles" />
+
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="120dp"
+                                android:layout_height="93dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="408dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/beverages" />
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="120dp"
+                                android:layout_height="93dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="204dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/rice" />
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="120dp"
+                                android:layout_height="93dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="520dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/admin_brk" />
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="120dp"
+                                android:layout_height="93dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/admin_brk" />
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="255dp"
+                                android:layout_height="27dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#FB7500"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/appetizers"
+                                android:textColor="#ED000000"
+                                android:textStyle="bold"
+                                app:fontFamily="monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView43"
+                                android:layout_width="255dp"
+                                android:layout_height="27dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#FB7500"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/noodles"
+                                android:textColor="#ED000000"
+                                android:textStyle="bold"
+                                app:fontFamily="monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/listView2" />
+
+                            <TextView
+                                android:id="@+id/textView45"
+                                android:layout_width="255dp"
+                                android:layout_height="27dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#FB7500"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/drinks"
+                                android:textColor="#ED000000"
+                                android:textStyle="bold"
+                                app:fontFamily="monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/listView3" />
+
+                            <TextView
+                                android:id="@+id/textView44"
+                                android:layout_width="255dp"
+                                android:layout_height="27dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:background="#FB7500"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/rice"
+                                android:textColor="#ED000000"
+                                android:textStyle="bold"
+                                app:fontFamily="monospace"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/listView1" />
+
+                            <Button
+                                android:id="@+id/btnup"
+                                android:layout_width="403dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="52dp"
+                                android:background="#FADA07"
+                                android:text="@string/updatethis"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/listView4" />
+
+                            <ListView
+                                android:id="@+id/listView1"
+                                android:layout_width="218dp"
+                                android:layout_height="79dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.487"
+                                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                            <ListView
+                                android:id="@+id/listView2"
+                                android:layout_width="218dp"
+                                android:layout_height="79dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.487"
+                                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                            <ListView
+                                android:id="@+id/listView3"
+                                android:layout_width="218dp"
+                                android:layout_height="79dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.487"
+                                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                            <ListView
+                                android:id="@+id/listView4"
+                                android:layout_width="218dp"
+                                android:layout_height="79dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.487"
+                                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                                app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/background">
-
 <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".Activity2"
     android:orientation="vertical">
 
@@ -28,8 +22,7 @@
         android:id="@+id/imageView4"
         android:layout_width="55dp"
         android:layout_height="57dp"
-        app:srcCompat="@drawable/user"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/user" />
 
     <LinearLayout
         android:layout_width="383dp"
@@ -38,22 +31,20 @@
         android:layout_marginLeft="10dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="@string/add_your_name"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
         <EditText
+            android:id="@+id/uname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/type_your_feedback"
-            android:inputType="textPersonName"
-            android:text="@string/add_your_feedback"
-            android:autofillHints="" tools:targetApi="o"/>
+            android:ems="10"
+            android:hint="@string/uname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ufeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_your_feedback"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -73,6 +64,7 @@
             android:text="@string/add_cancel" />
 
         <Button
+            android:id="@+id/submit_feedback"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -83,5 +75,3 @@
     </LinearLayout>
 
 </LinearLayout>
-
-</ScrollView>

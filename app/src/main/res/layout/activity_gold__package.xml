@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,8 +8,6 @@
 
 
     <LinearLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".Gold_Package"
@@ -336,23 +335,23 @@
             >
 
             <Button
-                style="?android:attr/button"
                 android:id="@+id/btnAccount"
+                style="?android:attr/button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
+                android:background="@color/colorPrimary"
                 android:clickable="true"
                 android:filterTouchesWhenObscured="true"
-                android:background="@color/colorPrimary"
                 android:focusable="true"
+                android:inputType="none"
                 android:text="@string/account"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
-                android:inputType="none"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                />
+                android:visibility="invisible" />
 
 
             <Button
