@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     android:background="@drawable/background"
     android:layout_width="match_parent"
@@ -12,7 +11,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".Pro_UseActivity"
+        tools:context=".Silver_Package"
         android:orientation="vertical"
         >
 
@@ -28,7 +27,7 @@
                 android:layout_height="70dp"
                 android:layout_marginTop="0dp"
                 android:layout_weight="5"
-                android:text="@string/PLATINUM_PACKAGE"
+                android:text="@string/SILVER_PACKAGE"
                 android:textAlignment="center"
                 android:textColor="@android:color/primary_text_dark_nodisable"
                 android:textSize="30sp" />

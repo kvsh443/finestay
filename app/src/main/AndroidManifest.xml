@@ -12,6 +12,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Date_picker_2_Activity"></activity>
         <activity android:name=".FeedbackActivity" />
+        <activity android:name=".Silver_Package"></activity>
+        <activity android:name=".Gold_Package" />
+
         <activity android:name=".Admins_Reply" />
         <activity android:name=".Admin_Feedback" />
         <activity android:name=".Date_picker_activity" />

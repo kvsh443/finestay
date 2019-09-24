@@ -226,7 +226,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/listView1"
+        app:layout_constraintStart_toEndOf="@+id/listView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -238,11 +238,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/listView1"
+        app:layout_constraintStart_toEndOf="@+id/listView"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/listView"
         android:layout_width="550dp"
         android:layout_height="315dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -46,12 +46,15 @@
     <string name="type_response">Type Your Response</string>
 
 
-    <string name="PLATINUM_PACKAGE">01.PLATINUM PACKAGE</string>
-    <string name="GOLD_PACKAGE">02.GOLD PACKAGE</string>
-    <string name="SILVER_PACKAGE">03.SILVER PACKAGE</string>
+    <string name="PLATINUM_PACKAGE1">GRADE(A)</string>
+    <string name="PLATINUM_PACKAGE2">GRADE(B)</string>
+    <string name="PLATINUM_PACKAGE3">GRADE(C)</string>
+    <string name="PLATINUM_PACKAGE">PLATINUM PACKAGE</string>
+    <string name="GOLD_PACKAGE">GOLD PACKAGE</string>
+    <string name="SILVER_PACKAGE">SILVER PACKAGE</string>
     <string name="Management">PACKAGE MANAGEMENT</string>
     <string name="PACKAGE_NAME">PACKAGE_NAME:</string>
-    <string name="NO_OF_GUESTS">NO OF GUESTS:</string>
+    <string name="NO_OF_GUESTS">NO OF ADULTS:</string>
     <string name="NO_OF_ROOMS">NO OF ROOMS:</string>
     <string name="NO_OF_BATHS">NO OF BATHS:</string>
     <string name="EST_VALUE">EST.VALUE:   Rs.</string>
@@ -72,6 +75,11 @@
     <string name="a2">VIEW</string>
     <string name="a3">UPDATE</string>
     <string name="a4">DELETE</string>
+    <string name="a5">BACK</string>
+    <string name="meals">MEAL LIST</string>
+    <string name="account">RESERVATIONS</string>
+    <string name="NO_OF_Children">NO OF CHILDREN:</string>
+
 
     <string name="accept">Accept</string>
     <string name="CheckInMsg">Check In</string>
@@ -113,6 +121,5 @@
         <item>Silver</item>
         <item>Bronze</item>
     </string-array>
-
 
 </resources>

@@ -1,5 +1,6 @@
 package lk.sliit.finestay;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -15,6 +16,12 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -23,7 +30,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class CalculationActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+    DatabaseReference databaseReference, databaseReference2;
     Button btncheckOut, btncheckIn,btnReserve;
     EditText editTextGuestNo;
     Intent intentDate, intentSendPayload;
@@ -34,6 +41,8 @@ public class CalculationActivity extends AppCompatActivity implements AdapterVie
     Activity activity ;
     Spinner spinnerPackages;
     Double packageValue;
+    String guests;
+    Double rooms;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +64,7 @@ public class CalculationActivity extends AppCompatActivity implements AdapterVie
         c1= Calendar.getInstance();
         c2= Calendar.getInstance();
 
+
         try {
 
 
@@ -71,6 +81,49 @@ public class CalculationActivity extends AppCompatActivity implements AdapterVie
                 intentSendPayload.putExtra("outDate",btncheckOut.getText().toString());
             }
         }catch (Exception e){}
+
+
+        databaseReference =  FirebaseDatabase.getInstance().getReference().child("Property").child("Pro1");
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.hasChildren()){
+                    guests = dataSnapshot.child("guests").getValue().toString();
+
+                    rooms = Double.parseDouble(dataSnapshot.child("rooms").getValue().toString());
+                    editTextGuestNo.setText(guests);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+
+
+        });
+
+        databaseReference2 =  FirebaseDatabase.getInstance().getReference().child("last");
+        databaseReference2.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.hasChildren()){
+
+                    packageValue = Double.parseDouble(dataSnapshot.child("PackageValue").getValue().toString());
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+
+
+        });
+
+
 
 
         btnReserve.setOnClickListener((new View.OnClickListener() {
@@ -121,6 +174,7 @@ public class CalculationActivity extends AppCompatActivity implements AdapterVie
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CalculationActivity.this, Date_picker_activity.class);
+
                 startActivity(intent);
                 finish();
 
@@ -131,6 +185,7 @@ public class CalculationActivity extends AppCompatActivity implements AdapterVie
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CalculationActivity.this, Date_picker_activity.class);
+
                 startActivity(intent);
                 finish();
 
@@ -148,27 +203,27 @@ public class CalculationActivity extends AppCompatActivity implements AdapterVie
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (position){
-            case 0:
-                packageValue = 5000.00;
-                break;
-            case 1:
-                packageValue = 3000.00;
-                break;
-
-            case 2:
-                packageValue = 2000.00;
-                break;
-            case 3:
-                packageValue = 1000.00;
-                break;
-            default:
-                packageValue = 5000.01;
-                break;
+//            case 0:
+//                packageValue = 5000.00 * (rooms) ;
+//                break;
+//            case 1:
+//                packageValue = 3000.00  * (rooms);
+//                break;
+//
+//            case 2:
+//                packageValue = 2000.00 * (rooms);
+//                break;
+//            case 3:
+//                packageValue = 1000.00 * (rooms);
+//                break;
+//            default:
+//                packageValue = 5000.01 * (rooms);
+//                break;
         }
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-            packageValue = 5000.00;
+
     }
 }

@@ -1,22 +1,22 @@
-package lk.sliit.finestay;
+package lk.sliit.finestay.Model;
 
 public class Property {
 
-    private String name;
+    public  String name;
     private Integer guests;
     private Integer rooms;
-    private Integer baths;
-    private Integer value;
+    private Integer children;
+
+
+
 
     public Property() {
-    }
-
-    public Property(String name, Integer guests, Integer rooms, Integer baths, Integer value) {
         this.name = name;
         this.guests = guests;
         this.rooms = rooms;
-        this.baths = baths;
-        this.value = value;
+        this.children = children;
+
+
     }
 
     public String getName() {
@@ -43,19 +43,12 @@ public class Property {
         this.rooms = rooms;
     }
 
-    public Integer getBaths() {
-        return baths;
+
+    public Integer getChildren() {
+        return children;
     }
 
-    public void setBaths(Integer baths) {
-        this.baths = baths;
-    }
-
-    public Integer getValue() {
-        return value;
-    }
-
-    public void setValue(Integer value) {
-        this.value = value;
+    public void setChildren(Integer children) {
+        this.children = children;
     }
 }

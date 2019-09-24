@@ -13,12 +13,10 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TableLayout;
-import android.widget.TextView;
+
 import android.widget.Toast;
 
-import com.firebase.ui.database.FirebaseListAdapter;
-import com.firebase.ui.database.FirebaseListOptions;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -37,7 +35,6 @@ public class Reservation_Manager extends AppCompatActivity {
     DatabaseReference databaseReference, reservationReference;
     ListView listView;
     Button buttonApprove, buttonDeny;
-    FirebaseListAdapter adapter;
     ValueEventListener valueEventListener;
     CustomListAdapter customListAdapter;
 
@@ -55,7 +52,7 @@ public class Reservation_Manager extends AppCompatActivity {
         final ArrayList<Reservation> reservationsList = new ArrayList<>();
         customListAdapter = new CustomListAdapter(Reservation_Manager.this, reservationsList);
 
-        listView = findViewById(R.id.listView1);
+        listView = findViewById(R.id.listView);
 
         valueEventListener = new ValueEventListener() {
             @Override
